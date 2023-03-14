@@ -3,7 +3,7 @@ from dash import html,dcc
 import plotly_express as px
 import pandas as pd
 import warnings
-#!pip install termcolor
+
 
 warnings.filterwarnings("ignore")
 from oauth2client.service_account import ServiceAccountCredentials
