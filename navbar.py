@@ -13,6 +13,7 @@ def create_navbar():
                     dbc.DropdownMenuItem(divider=True),
                     dbc.DropdownMenuItem("Page 2", href='/page-2'),
                     dbc.DropdownMenuItem("Page 3", href='/page-3'),
+                    dbc.DropdownMenuItem("Page 4", href='/page-4'),
                 ],
             ),
         ],

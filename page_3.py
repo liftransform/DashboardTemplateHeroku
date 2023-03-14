@@ -20,5 +20,6 @@ def create_page_3():
         dcc.Graph("k1",figure = fig),
         dcc.Graph("k2",figure = fig),
         dcc.Graph("k3",figure = fig),
+        dcc.Graph("k4",figure = fig),
     ])
     return layout
