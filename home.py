@@ -1,4 +1,4 @@
-from dash import html
+from dash import html,dcc
 from navbar import create_navbar
 
 nav = create_navbar()
