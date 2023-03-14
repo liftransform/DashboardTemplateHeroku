@@ -1,7 +1,7 @@
 from dash import Dash, html, dcc
 import dash
 
-app = Dash( __name__)
+app = Dash(use_pages=True)
 server = app.server
 app.layout = html.Main(
     [
