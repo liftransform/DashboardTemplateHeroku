@@ -9,24 +9,24 @@ from app import app
 server = app.server
 app.config.suppress_callback_exceptions = True
 
-app.layout = html.Div([
-    dcc.Location(id='url', refresh=False),
-    html.Div(id='page-content')
-])
+app.layout = html.Div(
+    [dcc.Location(id="url", refresh=False), html.Div(id="page-content")]
+)
 
 
-@app.callback(Output('page-content', 'children'),
-              [Input('url', 'pathname')])
+@app.callback(Output("page-content", "children"), [Input("url", "pathname")])
 def display_page(pathname):
-    if pathname == '/page-2':
-        return create_page_2()
-    if pathname == '/page-3':
-        return create_page_3()
-    if pathname == '/page-4':
-        return create_page_4()
+    if pathname == "/page-2":
+        return create_page_2(pathname)
+    if pathname == "/page-3":
+        return create_page_3(pathname)
+    if pathname == "/page-4":
+        return create_page_4(pathname)
     else:
-        return create_page_home()
+        return create_page_home(pathname)
 
 
-if __name__ == '__main__':
-    app.run_server(debug=False)
+if __name__ == "__main__":
+    app.run_server(
+        debug=True
+    )  # TODO: Change this to False when deploying to production
