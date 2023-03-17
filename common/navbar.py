@@ -2,8 +2,8 @@ from dash import html
 
 
 def create_navbar(url="/"):
-    active = "bg-blue-100 text-gray-900 rounded-md"
-    inactive = "hover:bg-blue-100 hover:text-gray-900 rounded-md"
+    active = "bg-[#EBCABA] text-gray-900 rounded-md"
+    inactive = "hover:bg-[#EBCABA] hover:text-gray-900 rounded-md"
 
     links = [
         {
