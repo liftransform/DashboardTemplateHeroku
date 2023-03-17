@@ -19,6 +19,5 @@ def display_page(pathname):
 
 
 if __name__ == "__main__":
-    app.run_server(
-        debug=True
-    )  # TODO: Change this to False when deploying to production
+    # set debug=True to enable hot reloading
+    app.run_server()
