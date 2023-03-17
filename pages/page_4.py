@@ -1,6 +1,6 @@
 from dash import html, dcc
-from layout import create_layout
-from grid import create_grid
+from common.layout import create_layout
+from common.grid import create_grid, create_grid_item
 import pandas as pd
 import plotly_express as px
 
@@ -16,10 +16,10 @@ def create_page_4(pathname):
             create_grid(
                 4,
                 [
-                    dcc.Graph("k1", figure=fig),
-                    dcc.Graph("k2", figure=fig),
-                    dcc.Graph("k3", figure=fig),
-                    dcc.Graph("k4", figure=fig),
+                    create_grid_item(dcc.Graph("k1", figure=fig)),
+                    create_grid_item(dcc.Graph("k2", figure=fig)),
+                    create_grid_item(dcc.Graph("k3", figure=fig)),
+                    create_grid_item(dcc.Graph("k4", figure=fig)),
                 ],
             )
         ],

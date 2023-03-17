@@ -1,8 +1,8 @@
 from dash import html, dcc
-from layout import create_layout
+from common.layout import create_layout
 
 
-def create_page_home(pathname):
+def create_home(pathname):
     layout = html.Div(
         [
             create_layout(

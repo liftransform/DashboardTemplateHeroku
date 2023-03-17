@@ -1,7 +1,8 @@
 from dash import html, dcc
-from navbar import create_navbar
-from layout import create_layout
-from grid import create_grid
+from common.navbar import create_navbar
+from common.layout import create_layout
+from common.grid import create_grid, create_grid_item
+
 
 nav = create_navbar()
 header = html.H3("Welcome to page 2 jkk!")
@@ -20,10 +21,10 @@ def create_page_2(pathname):
             create_grid(
                 2,
                 [
-                    dcc.Graph("k1", figure=fig),
-                    dcc.Graph("k2", figure=fig),
-                    dcc.Graph("k3", figure=fig),
-                    dcc.Graph("k4", figure=fig),
+                    create_grid_item(dcc.Graph("k1", figure=fig)),
+                    create_grid_item(dcc.Graph("k2", figure=fig)),
+                    create_grid_item(dcc.Graph("k3", figure=fig)),
+                    create_grid_item(dcc.Graph("k4", figure=fig)),
                 ],
             )
         ],

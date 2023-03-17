@@ -1,9 +1,9 @@
 from dash import html
 
 
-def create_navbar(url = "/"):
-    active = "bg-blue-100 text-gray-900"
-    inactive = "hover:bg-gray-100 hover:text-gray-900"
+def create_navbar(url="/"):
+    active = "bg-blue-100 text-gray-900 rounded-md"
+    inactive = "hover:bg-blue-100 hover:text-gray-900 rounded-md"
 
     links = [
         {
@@ -34,7 +34,7 @@ def create_navbar(url = "/"):
             html.A(
                 link["name"],
                 href=link["href"],
-                className=link["class"] + " block px-4 py-2 text-sm text-gray-700",
+                className=link["class"] + " block px-4 py-2 text-md",
             )
         )
 
@@ -46,7 +46,7 @@ def create_navbar(url = "/"):
                         children=[
                             html.H2(
                                 "Dash Template",
-                                className="text-xl font-bold text-gray-800",
+                                className="text-xl font-bold text-[#EBCABA]",
                             ),
                         ]
                     )
@@ -68,7 +68,7 @@ def create_navbar(url = "/"):
                 className="flex flex-col w-100",
             ),
         ],
-        className="flex flex-col h-screen bg-gray-100 w-[15%] py-5 px-3 shadow-sm",
+        className="flex flex-col h-screen bg-[#118467] text-[#EBCABA] w-[15%] py-5 px-3 shadow-sm",
     )
 
     return navbar
