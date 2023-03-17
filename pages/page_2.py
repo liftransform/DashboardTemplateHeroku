@@ -21,10 +21,10 @@ def create_page_2(pathname):
             create_grid(
                 2,
                 [
-                    create_grid_item(dcc.Graph("k1", figure=fig)),
+                    create_grid_item(dcc.Graph("k1", figure=fig),2),
                     create_grid_item(dcc.Graph("k2", figure=fig)),
                     create_grid_item(dcc.Graph("k3", figure=fig)),
-                    create_grid_item(dcc.Graph("k4", figure=fig)),
+                    create_grid_item(dcc.Graph("k4", figure=fig),2),
                 ],
             )
         ],

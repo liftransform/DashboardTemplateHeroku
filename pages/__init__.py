@@ -17,4 +17,4 @@ pages = [
 
 
 def create_page(children=[]):
-    return html.Main(children=children)
+    return html.Main(children=children, className="w-full h-full")
