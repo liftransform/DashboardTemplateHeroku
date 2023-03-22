@@ -8,7 +8,10 @@ def create_layout(title="home page", url="/", children=[]):
             create_navbar(url),
             html.Div(
                 children=[
-                    html.H3(f"Welcome to {title}!", className='text-2xl font-bold text-gray-800 capitalize'),
+                    html.H3(
+                        f"{title}",
+                        className="text-2xl font-bold text-gray-800 capitalize",
+                    ),
                     html.Div(children=children),
                 ],
                 className="flex flex-col gap-3 w-[90%] bg-gray-50 border-r border-green-200 py-5 px-5 overflow-y-auto",

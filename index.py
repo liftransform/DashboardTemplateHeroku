@@ -20,4 +20,4 @@ def display_page(pathname):
 
 if __name__ == "__main__":
     # set debug=True to enable hot reloading
-    app.run_server()
+    app.run_server(debug=True)

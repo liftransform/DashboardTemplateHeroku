@@ -44,9 +44,10 @@ def create_navbar(url="/"):
                 children=[
                     html.Div(
                         children=[
-                            html.H2(
-                                "Dash Template",
-                                className="text-xl font-bold text-[#EBCABA]",
+                            html.Img(
+                                src="/assets/images/logo.jpg",
+                                alt="logo",
+                                className="w-28 h-28 rounded-full",
                             ),
                         ]
                     )
@@ -65,10 +66,10 @@ def create_navbar(url="/"):
                         className="px-2 pt-2 pb-3 space-y-1",
                     ),
                 ],
-                className="flex flex-col w-100",
+                className="flex flex-col w-full",
             ),
         ],
-        className="flex flex-col h-screen bg-[#118467] text-[#EBCABA] w-[15%] py-5 px-3 shadow-sm",
+        className="flex flex-col h-screen bg-[#118467] text-[#EBCABA] w-[15%] py-5 px-3 shadow-sm items-center gap-4",
     )
 
     return navbar
